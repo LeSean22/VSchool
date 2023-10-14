@@ -1,0 +1,40 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.section {
+    background-color: #3498db;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+input[type="number"] {
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c6ea4;
+}
