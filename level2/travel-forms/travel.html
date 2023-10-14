@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Form</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Travel Form</h1>
+
+        <form name="travel">
+            <input type="text" name= "firstName" placeholder="First Name" required/>
+            <br/>
+            <input type="text" name="LastName" placeholder="Last Name" required/>
+            <br/>
+            <input type="number" name="age" placeholder="age"/>
+            <br/>
+            Male:   <input type="radio" name= "gender" value="male"/>
+            Female: <input type="radio" name="gender"  value="female"/>
+            <br/>
+            <select name="city">
+              <option >St.Louis</option>
+              <option >Detroit</option>
+              <option >Chicago</option> 
+              <option >Atlanta</option> 
+            <select/>
+            <br/>
+            Vegan:<input type="checkbox" name="diet" value="Vegan"/>
+            Vegetarian:<input type="checkbox" name="diet" value="Vegetarian"/>
+            Dog Food:<input type="checkbox" name="diet" value="Dog Food"/>
+            <button>Submit</button>
+        </form>
+
+    <script src="travel.js"></script>
+  </body>
+</html>
