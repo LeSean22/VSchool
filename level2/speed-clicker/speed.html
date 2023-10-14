@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Counter</title>
+</head>
+<body>
+    <h1>Click Counter</h1>
+    <p>Click anywhere on the page!</p>
+    <p>Click Count: <span id="click-count">0</span></p>
+    <p>Time Left: <span id="time-left">30</span> seconds</p>
+    
+    <script>
+        // Initialize click count from localStorage, or use 0 if it's not set.
+        let clickCount = localStorage.getItem('clickCount') || 0;
+        document.getElementById('click-count').textContent = clickCount;
+
+        // Function to increment and update the click count.
+        function incrementClickCount() {
+            clickCount++;
+            localStorage.setItem('clickCount', clickCount); // Store the click count in localStorage.
+            document.getElementById('click-count').textContent = clickCount;
+        }
+
+        // Add a click event listener to the entire document.
+        document.addEventListener('click', incrementClickCount);
+
+        // Countdown timer
+        let timeLeft = 30; // Change this to set the countdown time in seconds.
+        const timeLeftElement = document.getElementById('time-left');
+
+        function updateTimer() {
+            timeLeft--;
+            timeLeftElement.textContent = timeLeft;
+            if (timeLeft === 0) {
+                // Remove the click event listener after the timer ends.
+                document.removeEventListener('click', incrementClickCount);
+            }
+        }
+
+        const timerInterval = setInterval(updateTimer, 1000);
+
+        // When the page loads, check if the timer has ended.
+        if (timeLeft === 0) {
+            document.removeEventListener('click', incrementClickCount);
+            clearInterval(timerInterval);
+        }
+    </script>
+</body>
+</html>
