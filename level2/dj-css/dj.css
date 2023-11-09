@@ -1,0 +1,70 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #888888;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    /* transition: all 0.3s; Add smooth transitions for all properties */
+}
+
+.box:hover {
+    /* Change the properties you want on hover */
+    background-color: #e74c3c;
+    border: 2px solid #c0392b;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #888888;
+    opacity: 0.7;
+}
+#box1:hover {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; /* Custom styles for Box 1 when hovered */
+    background-color: #2ecc71;
+}
+
+#box2:hover {
+    /* Custom styles for Box 2 when hovered */
+    border-width: 4px;
+    background-color: #be0d7a;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#box3:hover {
+    /* Custom styles for Box 3 when hovered */
+    border-color: #764e0d;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+#box4:hover {
+    /* Custom styles for Box 4 when hovered */
+    background-color: #0a1998;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#box5:hover {
+    /* Custom styles for Box 5 when hovered */
+    border-width: 4px;
+    background-color: #0a981d;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+#box6:hover {
+    /* Custom styles for Box 6 when hovered */
+    border-color: #f39c12;
+    transition-property: all;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+}
+/* Repeat this for the other boxes */
